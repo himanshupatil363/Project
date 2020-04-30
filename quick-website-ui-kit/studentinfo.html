@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=en>
+<!-- Mirrored from preview.webpixels.io/quick-website-ui-kit/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Apr 2020 11:33:40 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description
+        content="Quick Website UI Kit is an innovative HTML template solution which combines beautiful design and flawless functionality.">
+    <meta name=author content=Webpixels>
+    <title>Quick – Website UI Kit</title>
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%
+            }
+
+            100% {
+                width: 0;
+                height: 0
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1
+        }
+
+        body:not(.loaded) {
+            overflow: hidden
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector("body").classList.add("loaded")
+            }, 300)
+        })
+    </script>
+    <link rel=icon href=assets/img/brand/favicon.png type=image/png> <link rel=stylesheet
+        href=assets/libs/%40fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
+        href=assets/css/quick-website.css id=stylesheet>
+    <link rel="stylesheet" href="/quick-website-ui-kit/style.css">
+</head>
+
+<body class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <div class="breadcrumb breadcrumb-links ">
+            <a class="breadcrumb-item m-2 p-2 text-primary" href="#">Step 1 : </br>Student Information : </a>
+            <a class="breadcrumb-item m-2 p-2" href="/quick-website-ui-kit/PrentsDetails.html">Step 2 : </br>Parent's Details :  </a>
+            <a class="breadcrumb-item m-2 p-2" href="/quick-website-ui-kit/localguardian.html">Step 3 : </br>Details of Local Guardian :  </a>
+            <a class="breadcrumb-item m-2 p-2" href="/quick-website-ui-kit/Upload.html">Step 4 : </br>Upload Photo/Signature/Document :  </a>
+        </div>
+    </nav>
+    <section class="slice slice-lg" id=sct-form-contact>
+         <div class="container position-relative zindex-100">
+            <div class="row justify-content-center mb-5">
+               <div class="col-lg-6 text-center">
+                  <h3>Student Info</h3>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <form id="form-contact">
+                     <div class="form-group"><label for="name">Name of the Student :</label><div class="row">
+                         <input class="form-control form-control-md col m-1" type=text placeholder="First name" required name="name">
+                         <input class="form-control form-control-md col m-1" type=text placeholder="Middle name" required name="name">
+                         <input class="form-control form-control-md col m-1" type=text placeholder="Last name" required name="name"></div></div>
+                    <div class="form-group row"><label class="col-6 col-md-7 col-sm-7" for="class">Class in which admission sought :</label><input class="form-control form-control-md col-6 m-1" type=text placeholder="Class" required name="class" ></input></div>
+                     <div class=form-group><input class="form-control form-control-md" type=email placeholder=email@example.com required></div>
+                     <div class=form-group><input class="form-control form-control-md" type=text placeholder=+40-745-234-567 required></div>
+                     <div class=form-group><textarea class="form-control form-control-md" data-toggle=autosize placeholder="Tell us a few words ..." rows=3 required></textarea></div>
+                     <div class=text-center><button type=reset class="btn-reset d-none"></button> <button type=submit class="btn btn-block btn-lg btn-primary mt-4">Send your message</button></div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+</body>
