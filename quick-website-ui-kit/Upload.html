@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang=en>
-<!-- Mirrored from preview.webpixels.io/quick-website-ui-kit/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Apr 2020 11:33:40 GMT -->
+<!-- Mirrored from preview.webpixels.io/quick-website-ui-kit/pages/account/settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Apr 2020 11:35:25 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <!-- /Added by HTTrack -->
@@ -59,20 +59,99 @@
             }, 300)
         })
     </script>
-    <link rel=icon href=assets/img/brand/favicon.png type=image/png> <link rel=stylesheet
-        href=assets/libs/%40fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
-        href=assets/css/quick-website.css id=stylesheet>
-    <link rel="stylesheet" href="/quick-website-ui-kit/style.css">
+    <link rel=icon href=../../assets/img/brand/favicon.png type=image/png> <link type=text/css
+        href=../../assets/libs/select2/dist/css/select2.min.css rel=stylesheet>
+    <link type=text/css href=../../assets/libs/flatpickr/dist/flatpickr.min.css rel=stylesheet>
+    <link rel=stylesheet href=../../assets/libs/%40fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
+        href=../../assets/css/quick-website.css id=stylesheet>
 </head>
 
-<body class="container-fluid">
-    <nav aria-label="breadcrumb">
-        <div class="breadcrumb breadcrumb-links md">
-           <a class="breadcrumb-item m-2 p-2 " href="/quick-website-ui-kit/studentinfo.html">Step 1 : </br>Student Information : </a>
-            <a class="breadcrumb-item m-2 p-2 " href="/quick-website-ui-kit/PrentsDetails.html">Step 2 : </br>Parent's Details :  </a>
-           <a class="breadcrumb-item m-2 p-2 " href="/quick-website-ui-kit/localguardian.html">Step 3 : </br>Details of Local Guardian :  </a>
-            <a class="breadcrumb-item m-2 text-primary p-2 " href="#">Step 4 : </br>Upload Photo/Signature/Document :  </a>
+<body>
+    <section class="pt-5 bg-section-secondary">
+        <div class=container>
+            <div class="row justify-content-center">
+                <div class=col-lg-9>
+                    <div class="row align-items-center">
+                        <div class=col>
+                            <h1 class="h2 mb-0">Student Information</h1>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class=col>
+                            <ul class="nav nav-tabs overflow-x">
+                                <li class=nav-item><a href="#" class="nav-link">Student Information</a>
+                                </li>
+                                <li class=nav-item><a href="#" class="nav-link">Parents Details</a></li>
+                                <li class=nav-item><a href="#" class=nav-link>Details of Local Guardian</a>
+                                </li>
+                                <li class=nav-item><a href="#" class="nav-link active">Uploads</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
+    </section>
+    <div class="slice slice-sm bg-section-secondary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
 
+                            </div>
+                            <div class="row">
+                                <div class="mt-3">
+                                    <button type="button" class="btn btn-sm btn-primary"
+                                        onclick="confirmation()">Submit</button>
+                                    <button type="reset" class="btn btn-sm btn-danger" onclick="confor()">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function confirmation() {
+            confirm("Are you sure you want to save personal details ?");
+        }
+
+        function confor() {
+            confirm("By clicking this all the information will be erased, are you sure?");
+        }
+    </script>
+    <script src=../../assets/libs/jquery/dist/jquery.min.js> </script> <script
+        src=../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js> </script> <script
+        src=../../assets/libs/svg-injector/dist/svg-injector.min.js> </script> <script
+        src=../../assets/libs/feather-icons/dist/feather.min.js> </script> <script
+        src=../../assets/libs/in-view/dist/in-view.min.js> </script> <script
+        src=../../assets/libs/sticky-kit/dist/sticky-kit.min.js> </script> <script
+        src=../../assets/libs/imagesloaded/imagesloaded.pkgd.min.js> </script> <script
+        src=../../assets/libs/progressbar.js/dist/progressbar.min.js> </script> <script
+        src=../../assets/libs/select2/dist/js/select2.min.js> </script> <script
+        src=../../assets/libs/flatpickr/dist/flatpickr.min.js> </script> <script src=../../assets/js/quick-website.js>
+        </script> <script>
+        feather.replace({
+            width: "1em",
+            height: "1em"
+        })
+    </script>
+    <script>
+        ! function (e, t, a, n, g) {
+            e[n] = e[n] || [], e[n].push({
+                "gtm.start": (new Date).getTime(),
+                event: "gtm.js"
+            });
+            var m = t.getElementsByTagName(a)[0],
+                r = t.createElement(a);
+            r.async = !0, r.src = "../../../../www.googletagmanager.com/gtm4c6a.js?id=GTM-MF4DZVH", m.parentNode
+                .insertBefore(r, m)
+        }(window, document, "script", "dataLayer")
+    </script>
 </body>
+
+</html>
