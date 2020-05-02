@@ -56,3 +56,15 @@ models:
     city: string:100 nullable
     pincode: tinyInteger
     is_complete: boolean #ignore this field himanshu
+    
+    
+   guardian:
+    name: string:200 nullable
+    address: string:200 nullable
+    landmark: string:200 nullable
+    country: string:100 nullable
+    state: string:100 nullable
+    district: string:100 nullable
+    city: string:100 nullable
+    pincode: tinyInteger nullable
+    mobile: unsignedBigInteger
