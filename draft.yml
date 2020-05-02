@@ -1,0 +1,58 @@
+models:
+  Student:
+    last_name: string:200 nullable
+    middle_name: string:200 nullable
+    first_name: string:200 nullable
+    class: string:50 nullable
+    gender: string:20 nullable
+    dob: date nullable
+    age: integer nullable
+    place_of_birth: string:50 nullable
+    blood_group: string:10 nullable
+    nationality: string:50 nullable
+    religion: string:50 nullable
+    mother_tongue: string:50 nullable default:Hindi
+    caste: string:50 nullable
+    aadhar: string:50 nullable
+    minority: string:50 nullable
+    only_child: boolean default:false
+    sibling_count: tinyInteger
+    sibling_name: nullable string:200
+    sibling_class: nullable string:200
+    sibling_section: nullable string:200
+    attended_class: string:50
+    transportation: boolean nullable
+    area: string:200 nullable
+    address: string:200 nullable
+    landmark: string:200 nullable
+    country: string:100 nullable
+    state: string:100 nullable
+    district: string:100 nullable
+    city: string:100 nullable
+    pincode: tinyInteger
+    is_complete: boolean
+    user_id: id:user
+    softDeletes
+    
+    
+  Parent:
+    f_name: string:200 
+    f_qualification: string:200
+    f_income: integer
+    f_office: string:230
+    f_mobile: unsignedBigInteger 
+    f_email: string:130
+    m_name: string:200 
+    m_qualification: string:200
+    m_income: integer
+    m_office: string:230
+    m_mobile: unsignedBigInteger 
+    m_email: string:130
+    address: string:200 nullable
+    landmark: string:200 nullable
+    country: string:100 nullable
+    state: string:100 nullable
+    district: string:100 nullable
+    city: string:100 nullable
+    pincode: tinyInteger
+    is_complete: boolean #ignore this field himanshu
