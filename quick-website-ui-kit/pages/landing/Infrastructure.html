@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+   <meta charset=utf-8>
+   <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+   <title>KMS</title>
+   <style>
+      @keyframes hidePreloader {
+         0% {
+            width: 100%;
+            height: 100%
+         }
+
+         100% {
+            width: 0;
+            height: 0
+         }
+      }
+
+      body>div.preloader {
+         position: fixed;
+         background: #fff;
+         width: 100%;
+         height: 100%;
+         z-index: 1071;
+         opacity: 0;
+         transition: opacity .5s ease;
+         overflow: hidden;
+         pointer-events: none;
+         display: flex;
+         align-items: center;
+         justify-content: center
+      }
+
+      body:not(.loaded)>div.preloader {
+         opacity: 1
+      }
+
+      body:not(.loaded) {
+         overflow: hidden
+      }
+
+      body.loaded>div.preloader {
+         animation: hidePreloader .5s linear .5s forwards
+      }
+
+      .grad {
+         background-image: linear-gradient(to bottom, #ffffff 0%, #ff9933 100%);
+      }
+
+      .grad-2 {
+         background-image: linear-gradient(to bottom, #ffffff 0%, #bdbbbb 100%);
+      }
+
+      #con-2 {
+         left: 0px;
+         top: -200px;
+         z-index: +1;
+      }
+
+      #con-1 {
+         margin-left: -150px;
+      }
+
+      .rad {
+         border-radius: 50px;
+         border-top-left-radius: 0px;
+         border-bottom-left-radius: 0px;
+      }
+   </style>
+   <script>
+      window.addEventListener("load", function () {
+         setTimeout(function () {
+            document.querySelector("body").classList.add("loaded")
+         }, 300)
+      })
+   </script>
+   <link rel=icon href=../../assets/img/brand/favicon.png type=image/png> <link rel=stylesheet
+      href=../../assets/libs/swiper/dist/css/swiper.min.css> <link rel=stylesheet
+      href=../../assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css> <link rel=stylesheet
+      href=../../assets/libs/%40fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
+      href=../../assets/css/quick-website.css id=stylesheet>
+</head>
+
+<body>
+   <header class="" id=header-main>
+      <div class="grad">
+         <h1 class="text-center">
+            <a class="" href="#">
+               <img src="logos.png" width="5%" height="5%" alt="Logo">
+            </a><span class="display-4 text-dark">KMS English Medium School (CBSE)</span></h1>
+      </div>
+      <nav class="navbar navbar-main navbar-expand-lg navbar-light grad-2" id=navbar-main>
+         <div class=container>
+            <button class="navbar-toggler" type=button data-toggle=collapse data-target=#navbar-main-collapse
+               aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><span
+                  class=navbar-toggler-icon></span></button>
+            <div class="collapse navbar-collapse navbar-collapse-overlay" id=navbar-main-collapse>
+               <div class=position-relative><button class=navbar-toggler type=button data-toggle=collapse
+                     data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false
+                     aria-label="Toggle navigation"><i data-feather=x></i></button></div>
+               <ul class="navbar-nav ml-lg-auto">
+                  <li class="nav-item nav-item-spaced d-none d-lg-block">
+                     <a class=nav-link href="Homepage.html">Home </a> </li>
+                  <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle=hover>
+                     <a class=nav-link href="#" role=button data-toggle=dropdown aria-haspopup=true
+                        aria-expanded=false>About Us
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-md justify-content-center">
+                        <a class=dropdown-item href="schoolinfo.html">School Info</a>
+                        <a class=dropdown-item href="princ.html">Principal Message</a>
+                     </div>
+                  </li>
+                  <li class="nav-item nav-item-spaced d-none d-lg-block active">
+                     <a class="nav-link" href="#">Infrastructure </a> </li>
+                  <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle=hover>
+                     <a class=nav-link href=# role=button data-toggle=dropdown aria-haspopup=true
+                        aria-expanded=false>Academic
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-md justify-content-center">
+                        <a class="dropdown-item" href="#">Nursery</a>
+                        <a class=dropdown-item href="#">Junior KG</a>
+                        <a class=dropdown-item href="#">Senior KG</a>
+                     </div>
+                  </li>
+                  <li class="nav-item nav-item-spaced d-none d-lg-block">
+                     <a class=nav-link href="#">Gallery</a> </li>
+                  <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle=hover>
+                     <a class=nav-link href=# role=button data-toggle=dropdown aria-haspopup=true
+                        aria-expanded=false>Admission
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-md justify-content-center">
+                        <a class=dropdown-item href="#">Admission Process</a>
+                        <a class=dropdown-item href="#">Age Criteria</a>
+                        <a class=dropdown-item href="#">School Timing</a>
+                     </div>
+                  </li>
+                  <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle=hover>
+                     <a class=nav-link href=# role=button data-toggle=dropdown aria-haspopup=true
+                        aria-expanded=false>Online Admission
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-md justify-content-center">
+                        <a class=dropdown-item href="#">Register</a>
+                        <a class=dropdown-item href="#">Login</a>
+                     </div>
+                  </li>
+                  <li class="nav-item nav-item-spaced d-none d-lg-block">
+                     <a class=nav-link href="#">Contact Us</a> </li>
+                  <li class="nav-item nav-item-spaced d-none d-lg-block">
+                     <a class=nav-link href="#">Help Us</a> </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <section class="pb-0 mb-0">
+   </section>
+   <footer class=position-relative id=footer-main>
+      <div class="footer pt-lg-7 footer-dark bg-dark">
+         <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+            <svg width=2560px height=100px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink
+               preserveAspectRatio=none x=0px y=0px viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100"
+               xml:space=preserve class="">
+               <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+         </div>
+         <div class="container pt-4">
+            <div class="row">
+               <div class="col-lg-4 mb-5 mb-lg-0"><a href="../../index-2.html"><img alt="Image placeholder"
+                        src="logo.png" height="150rem;" id="footer-logo"></a>
+
+               </div>
+               <div class="col-lg-4 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                  <h5 class="heading mb-3">Quick Links</h5>
+                  <ul class="list-unstyled">
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Photo Gallery</a></li>
+                     <li><a href="#">Help</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 col-6 col-sm-4 mb-5 mb-lg-0">
+                  <h5 class="heading mb-3">Follow us on</h5>
+                  <ul class="list-unstyled">
+                     <li><a href="#">Services</a></li>
+                     <li><a href="#">Pricing</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">Careers</a></li>
+                  </ul>
+               </div>
+            </div>
+            <hr class="divider divider-fade divider-dark my-4">
+            <div class="row align-items-center justify-content-md-between pb-4">
+               <div class="col-md-6">
+                  <div class="copyright text-sm font-weight-bold text-center text-md-left">© 2020 <a
+                        href="https://webpixels.io/" class="font-weight-bold" target="_blank">KMS</a>. All
+                     rights reserved</div>
+               </div>
+               <div class="col-md-6">
+                  <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                     <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#">Cookies</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+   </footer>
+   <script src=../../assets/libs/jquery/dist/jquery.min.js> </script> <script
+      src=../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js> </script> <script
+      src=../../assets/libs/svg-injector/dist/svg-injector.min.js> </script> <script
+      src=../../assets/libs/feather-icons/dist/feather.min.js> </script> <script
+      src=../../assets/libs/in-view/dist/in-view.min.js> </script> <script
+      src=../../assets/libs/sticky-kit/dist/sticky-kit.min.js> </script> <script
+      src=../../assets/libs/imagesloaded/imagesloaded.pkgd.min.js> </script> <script
+      src=../../assets/libs/swiper/dist/js/swiper.min.js> </script> <script
+      src=../../assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js> </script> <script
+      src=../../assets/libs/typed.js/lib/typed.min.js> </script> <script src=../../assets/js/quick-website.js> </script>
+      <script>
+      feather.replace({
+         width: "1em",
+         height: "1em"
+      })
+   </script>
+   <script>
+      ! function (e, t, a, n, g) {
+         e[n] = e[n] || [], e[n].push({
+            "gtm.start": (new Date).getTime(),
+            event: "gtm.js"
+         });
+         var m = t.getElementsByTagName(a)[0],
+            r = t.createElement(a);
+         r.async = !0, r.src = "../../../../www.googletagmanager.com/gtm4c6a.js?id=GTM-MF4DZVH", m.parentNode
+            .insertBefore(r, m)
+      }(window, document, "script", "dataLayer")
+   </script>
+</body>
+
+</html>
