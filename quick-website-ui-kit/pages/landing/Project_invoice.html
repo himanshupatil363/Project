@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description
+        content="Quick Website UI Kit is an innovative HTML template solution which combines beautiful design and flawless functionality.">
+    <meta name=author content=Webpixels>
+    <title>KMS</title>
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%
+            }
+
+            100% {
+                width: 0;
+                height: 0
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1
+        }
+
+        body:not(.loaded) {
+            overflow: hidden
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards
+        }
+        span{
+            font-size: larger;
+        }
+        table,td,th{
+            font-size: large !important;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector("body").classList.add("loaded")
+            }, 300)
+        })
+    </script>
+    <link rel=icon href=../../assets/img/brand/favicon.png type=image/png> <link rel=stylesheet
+        href=../../assets/libs/swiper/dist/css/swiper.min.css> <link rel=stylesheet
+        href=../../assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css> <link rel=stylesheet
+        href=../../assets/libs/%40fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
+        href=../../assets/css/quick-website.css id=stylesheet>
+</head>
+
+<body>
+    <div class=preloader>
+        <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
+    </div>
+
+
+    <section class="slice slice-lg">
+        <div class="container position-relative">
+            <div class="card shadow-lg border-0 zindex-100">        
+                    <div class="card-header p-4">
+                        <a class="pt-2 d-inline-block" href="#" data-abc="true">BBBootstrap.com</a>
+                        <div class="float-right">
+                            <h3 class="mb-0">Invoice #BBB10234</h3>
+                            Date: 12 Jun,2019
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                    <div class="card-body px-5 py-5 text-center">
+                        <div class="row pt-4 mt-4 pb-2">
+                            <span class="col-md-12"><h2>K.M.S. ENGLISH MEDIUM SCHOOL CBSE</h2></span>
+                        </div>
+                        <div class="row pb-2">
+                            <span class="h4 col-md-12">Education Year 2020-2021</span>
+                        </div>
+                        <div class="row pb-4">
+                            <span class="h5 col-md-12">1st Installment</span>
+                        </div>
+                        <div class="row pb-4 mt-5">
+                            <span class="col-md-3">Student Name:</span>
+                            <span class="border-bottom col-md-7"></span>
+                        </div>
+                        <div class="row pb-5">
+                            <span class="col-md-3">Std:</span>
+                            <span class="border-bottom col-md-3"></span>
+                            <span class="col-md-2">Div:</span>
+                            <span class="border-bottom col-md-3"></span>
+                        </div>
+                        <table class=" table align-center mt-5" style="font-size: larger;">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No.</th>
+                                    <th scope="col">DESCRIPTION</th>
+                                    <th scope="col">Amount </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">1</th>
+                                    <td>ADMISSION FEE</td>
+                                    <td>₹ 1,500.00 </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td>TERM FEES</td>
+                                    <td>₹ 750.00</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td>TUTION FEES</td>
+                                    <td>₹ 4,500.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>RECEIPT FEES (A)</td>
+                                    <th>₹ 6,750.00</th>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td scope="row">COMPUTER FEES</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td scope="row">ADUIO FEES</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td scope="row">MISC FEES</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td scope="row">SCHOOL IMPROVEMENT</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td scope="row">ACTIVITY FEES</td>
+                                    <td>₹ 1,500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td scope="row">LIBRARY FEES</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td scope="row">ADMIN CHARGES</td>
+                                    <td>₹ 1,000.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>RECEIPT FEES (B)</td>
+                                    <th>₹ 2,500.00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>BUILDING FUND (B)</td>
+                                    <th>₹ 10,000.00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <h5><b>TOTAL FEES (A+B+C)</b></h5>
+                                    </th>
+                                    <td></td>
+                                    <th>
+                                        <h5 class="two">₹ 19,250.00</h5>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="float-left m-4">
+                            <span class="col-md-4 ">Figure in Words</span>
+                            <u></u>
+                        </div>
+                        <div class="float-right m-4 mt-7 mr-7">
+                            <span class="col-md-3 border-top">Signature</span>     
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="w-10 position-absolute bottom-n3 left-n5"><img alt="Image placeholder"
+                src=../../assets/img/svg/shapes/bubble-1.svg class="svg-inject fill-primary"></div>
+        <div class="w-10 position-absolute top-n5 right-n5"><img alt="Image placeholder"
+                src=../../assets/img/svg/shapes/bubble-1.svg class="svg-inject fill-dark"></div>
+        </div>
+    </section>
+    <script src=../../assets/libs/jquery/dist/jquery.min.js> </script> <script
+        src=../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js> </script> <script
+        src=../../assets/libs/svg-injector/dist/svg-injector.min.js> </script> <script
+        src=../../assets/libs/feather-icons/dist/feather.min.js> </script> <script
+        src=../../assets/libs/in-view/dist/in-view.min.js> </script> <script
+        src=../../assets/libs/sticky-kit/dist/sticky-kit.min.js> </script> <script
+        src=../../assets/libs/imagesloaded/imagesloaded.pkgd.min.js> </script> <script
+        src=../../assets/libs/swiper/dist/js/swiper.min.js> </script> <script
+        src=../../assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js> </script> <script
+        src=../../assets/libs/typed.js/lib/typed.min.js> </script> <script src=../../assets/js/quick-website.js>
+        </script> <script>
+        feather.replace({
+            width: "1em",
+            height: "1em"
+        })
+    </script>
+    <script>
+        ! function (e, t, a, n, g) {
+            e[n] = e[n] || [], e[n].push({
+                "gtm.start": (new Date).getTime(),
+                event: "gtm.js"
+            });
+            var m = t.getElementsByTagName(a)[0],
+                r = t.createElement(a);
+            r.async = !0, r.src = "../../../../www.googletagmanager.com/gtm4c6a.js?id=GTM-MF4DZVH", m.parentNode
+                .insertBefore(r, m)
+        }(window, document, "script", "dataLayer")
+    </script>
+</body>
+
+</html>
