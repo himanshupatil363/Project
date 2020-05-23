@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -47,6 +48,17 @@
         body.loaded>div.preloader {
             animation: hidePreloader .5s linear .5s forwards
         }
+
+        B {
+            color: black;
+        }
+
+        table,
+        td,
+        th,
+        tr {
+            font-size: medium !important;
+        }
     </style>
     <script>
         window.addEventListener("load", function () {
@@ -55,62 +67,122 @@
             }, 300)
         })
     </script>
-    <link rel=icon href=../../assets/img/brand/favicon.png type=image/png> <link rel=stylesheet
-        href=../../assets/libs/%40fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
-        href=../../assets/css/quick-website.css> <link rel=stylesheet href=../assets/css/docs.css> </head> <body
-        class=docs>
-    <div class="container-fluid container-docs">
-        <div class="main-content row position-relative pb-5">
-            <div class="col-xl-9 docs-content pb-5">
-                <h2 id=cards>Cards</h2>
-                <p>Quick comes with an alternative style for tables. Use <code
-                        class=highlighter-rouge>.table-cards</code>
-                    applied on the main table and the <code class=highlighter-rouge>.table-divider</code> applied on a
-                    <code class=highlighter-rouge>&lt;tr&gt;</code> element to achieve this modern look.
-                </p>
-                <table class="table table-cards align-items-center">
-                    <thead>
-                        <tr>
-                            <th scope=col>#</th>
-                            <th scope=col>First</th>
-                            <th scope=col>Last</th>
-                            <th scope=col>Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody class=list>
-                        <tr>
-                            <th scope=row>1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope=row>1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope=row>1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope=row>1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope=row>1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <link rel="icon" href="../../assets/img/brand/favicon.png type=image/png">
+    <link rel="stylesheet" href="../../assets/libs/%40fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/quick-website.css">
+    <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+
+<body>
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+           Modal
+        </button>
+        <div class="modal card align-items-center" id="Modal" tabindex="-1" role="dialog"
+            aria-labelledby="lblModal" aria-hidden="true">
+            <div class="text-center mb-3 p-5">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <p class="h2 text-bold"><b>K.M.S. ENGLISH MEDIUM SCHOOL CBSE</b></p>
+                <p class="h3">RE-ADMISSION CBSE FEE STRUCTURE 2020-2021</p><br>
+                <p class="h4">STANDARD - NURSERY</p>
             </div>
+            <table class="table-md table-cards text-center pt-4">
+                <thead>
+                    <tr>
+                        <th scope=col><b>DESCRIPTION</b></th>
+                        <th scope=col><b>TOTAL FEE</b></th>
+                        <th scope=col><b>I-INSTALLMENT</b>
+                            <p>April</p>
+                        </th>
+                        <th scope=col><b>II-INSTALLMENT</b>
+                            <p>June</p>
+                        </th>
+                        <th scope="col"><b>III-INSTALLMENT</b>
+                            <p>September</p>
+                        </th>
+                        <th scope="col"><b>IV-INSTALLMENT</b>
+                            <p>December</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class=list>
+                    <tr>
+                        <th scope=row>ADMISSION FEE</th>
+                        <td>1500</td>
+                        <td>1500</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope=row>TERM FEES</th>
+                        <td>3000</td>
+                        <td>750</td>
+                        <td>750</td>
+                        <td>750</td>
+                        <td>750</td>
+
+                    </tr>
+                    <tr>
+                        <th scope=row>TUTION FEES</th>
+                        <td>18000</td>
+                        <td>4500</td>
+                        <td>4500</td>
+                        <td>4500</td>
+                        <td>4500</td>
+                    </tr>
+                    <tr>
+                        <th scope=row>ACTIVITY FEES</th>
+                        <td>3000</td>
+                        <td>1500</td>
+                        <td>1500</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope=row>ADMIN CHARGES</th>
+                        <td>2000</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope=row>COMPUTER FEES</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope=row>RECIEPT FEES (A)</th>
+                        <td>27500</td>
+                        <td>9250</td>
+                        <td>7750</td>
+                        <td>5250</td>
+                        <td>5250</td>
+                    </tr>
+                    <tr>
+                        <th scope=row>BUILDING FUND (B)</th>
+                        <td>10000</td>
+                        <td>10000</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope=row><b>TOTAL FEES (A+B)</b></th>
+                        <td><b>37500</b></td>
+                        <td><b>19250</b></td>
+                        <td><b>7750</b></td>
+                        <td><b>5250</b></td>
+                        <td><b>5250</b></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <script src=../../assets/libs/jquery/dist/jquery.min.js> </script> <script
@@ -141,7 +213,7 @@
                     r, m)
         }(window, document, "script", "dataLayer")
     </script>
-    </body>
-    <!-- Mirrored from preview.webpixels.io/quick-website-ui-kit/docs/components/tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Apr 2020 11:36:37 GMT -->
+</body>
+<!-- Mirrored from preview.webpixels.io/quick-website-ui-kit/docs/components/tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Apr 2020 11:36:37 GMT -->
 
 </html>
