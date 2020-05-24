@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Quick – Website UI Kit</title>
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%
+            }
+
+            100% {
+                width: 0;
+                height: 0
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1
+        }
+
+        body:not(.loaded) {
+            overflow: hidden
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector("body").classList.add("loaded")
+            }, 300)
+        })
+    </script>
+    <link rel=icon href=../../assets/img/brand/favicon.png type=image/png> <link rel=stylesheet
+        href=../../assets/libs/%40fortawesome/fontawesome-free/css/all.min.css> <link rel=stylesheet
+        href=../../assets/css/quick-website.css id=stylesheet>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-6 p-5 m-auto">
+            <div class=card>
+                <div class=card-body>
+                    <div class=icon><img alt="Image placeholder" src="../../assets/img/svg/cards/credit-card.svg"
+                            class=svg-inject style="width:50px;height:50px"><div class="float-right badge font-weight-bold badge-secondary h1"><i data-feather="check" style="width:20px;height:20px"></i>Your class 1</div></div>
+                            
+                    <a href=# class="d-block h5 mt-3">Admission Number : 15899944795</a>
+                    <p class="text-m text-muted">Admission fees for year 2020-2021</p>
+                    <div class="row align-items-center mt-4">
+                        <button type="button" class="col-5 btn btn-animated btn-animated-y" style="background-color: #194C80;color:#fff;">
+                            <span class="btn-inner--hidden">
+                                <i data-feather="shopping-cart"></i>
+                            </span><span class="btn-inner--visible">Pay Now</span>
+                        </button>
+                        <div class="col-6 text-right"><span class="h5 font-weight-bolder text-success">₹53,850</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=../../assets/libs/jquery/dist/jquery.min.js> </script> <script
+        src=../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js> </script> <script
+        src=../../assets/libs/svg-injector/dist/svg-injector.min.js> </script> <script
+        src=../../assets/libs/feather-icons/dist/feather.min.js> </script> <script
+        src=../../assets/libs/in-view/dist/in-view.min.js> </script> <script
+        src=../../assets/libs/sticky-kit/dist/sticky-kit.min.js> </script> <script
+        src=../../assets/libs/imagesloaded/imagesloaded.pkgd.min.js> </script> <script
+        src=../../assets/libs/progressbar.js/dist/progressbar.min.js> </script> <script
+        src=../../assets/js/quick-website.js> </script> <script>
+        feather.replace({
+            width: "1em",
+            height: "1em"
+        })
+    </script>
+    <script>
+        ! function (e, t, a, n, g) {
+            e[n] = e[n] || [], e[n].push({
+                "gtm.start": (new Date).getTime(),
+                event: "gtm.js"
+            });
+            var m = t.getElementsByTagName(a)[0],
+                r = t.createElement(a);
+            r.async = !0, r.src = "../../../../www.googletagmanager.com/gtm4c6a.js?id=GTM-MF4DZVH", m.parentNode
+                .insertBefore(r, m)
+        }(window, document, "script", "dataLayer")
+    </script>
+</body>
+<!-- Mirrored from preview.webpixels.io/quick-website-ui-kit/pages/boards/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Apr 2020 11:35:27 GMT -->
+
+</html>
