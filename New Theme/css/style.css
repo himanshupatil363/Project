@@ -2757,6 +2757,11 @@ p {
 .single-course-2>.thum {
     position: relative;
 }
+.card-blank {
+    padding: 45px 50px;
+    background-color: #fff;
+    border-radius: 5px
+}
 
 .single-course-2>.thum .image>img {
     border-radius: 5px;
